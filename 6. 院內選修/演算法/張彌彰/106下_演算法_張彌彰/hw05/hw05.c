@@ -1,0 +1,136 @@
+/************************************************
+EE3980 HW05 Ranking Martial Artists
+104061212  Li-Yu Feng
+Date:2018/4/8
+*************************************************/
+#include<stdio.h>
+#include<stdlib.h>
+#include<stdbool.h>
+#include<string.h>
+#include <sys/time.h>
+
+typedef struct node{			//graph node
+	char *name; 
+	int index;
+	bool visited;
+	struct node *next, *end;
+}Node;
+
+int insertNode(Node **list, int N, char *winner, char *loser);	//record match 
+void top_sort(int index, Node **list, char **rank);				//topology sort
+void rankit(char *name, char **rank);							//store result
+double GetTime(void);
+
+int insertNode(Node **list, int N, char *winner, char *loser){
+	Node *temp, *temp2;
+	int i;		//looping index
+	int j, k;	//to find winner,loser
+	int m, n;	//record winnner/loser location
+
+	i = 0;
+	j = 1; 
+	k = 1;
+	m = -1;
+	n = -1;
+	for(i = 0, j = 1; i < N && j != 0; i++){	//find winner location
+		j = strcmp(list[i]->name, winner);
+	}
+	m = i-1;
+	for(i = 0, k = 1; i < N && k!=0; i++){		//find loser
+		k = strcmp(list[i]->name, loser);
+	}
+	n = i-1;
+
+	temp = list[m]->end;
+	
+	temp2 = malloc(sizeof(Node));
+	temp2->name = malloc(  strlen(loser) + 1 );
+	temp2->name = loser;
+	temp2->visited = false;				//
+	temp2->index = n;					//
+	temp2->next = NULL;					//add node to linked list
+	temp->next = temp2;
+	list[m]->end = temp2;
+	return 0;
+}
+
+void top_sort(int index, Node **list, char **rank){
+	Node *temp = list[index];
+
+	temp->visited = true; 
+	for(;temp != NULL; temp = temp->next)
+		if(list[temp->index]->visited == false) 
+			top_sort(temp->index,list,rank);
+	rankit(list[index]->name,rank);
+}
+
+void rankit(char *name, char ** rank){
+	static int i= 107;		//Nplayers = 108
+
+	rank[i--] = name;
+}
+
+double GetTime(void)
+{
+    struct timeval tv;
+    gettimeofday(&tv,NULL);
+    return tv.tv_sec+1e-6*tv.tv_usec;
+}
+
+int main(){
+
+	int Nplayers,Ntour;		//108,63
+	Node **NameList, *iter;
+	int i,j,k;
+	char *temp1, *temp2;	//input buffer
+	char **rank;			//final ranking
+	double time;
+
+	temp1 = malloc(sizeof(char *));
+	temp2 = malloc(sizeof(char *));
+
+	scanf("%d", &Nplayers);
+	printf("%d\n",Nplayers );
+	
+
+	NameList = (Node **)malloc(Nplayers * sizeof(Node *));
+	for (i = 0; i < Nplayers; ++i){
+		NameList[i] = (Node *)malloc(sizeof(Node *));
+		NameList[i]->name = malloc(sizeof(char *));
+	}
+
+	time  = GetTime();
+	for (i = 0; i < Nplayers; ++i)
+	{
+		scanf("%s", NameList[i]->name);			//read martial artists' name
+		NameList[i]->end = NameList[i];
+		NameList[i]->next = NULL;
+		NameList[i]->visited = false;						//input players &
+		NameList[i]->index = i;								//init NameList
+	}
+
+	rank = (char **)malloc(Nplayers * sizeof(char *));		//
+	for (i = 0; i < Nplayers; ++i){							//
+		rank[i] = (char *)malloc(sizeof(char *));			//initialize rank
+	}
+
+	for(j = 0; j < 5; j++){				//tour1~tour5
+		scanf("%d", &Ntour);
+		for (i = 0; i < Ntour; ++i){
+			scanf("%s %s %s",temp1, temp2, temp2 );
+			insertNode(NameList, Nplayers, temp1, temp2);
+		}
+	}
+
+	for(i = 0; i < Nplayers; i++){			//call topology sort
+		if( NameList[i]->visited ==false )
+			top_sort(i, NameList, rank);
+	}
+
+	for(i = 0; i < Nplayers; i++){			//print ranking
+		printf("%d:%s\n",i+1, rank[i]);
+	}
+	printf("CPU Time = %.3g sec\n",GetTime()-time );
+
+	return 0;
+}

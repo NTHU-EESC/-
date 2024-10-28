@@ -1,0 +1,46 @@
+p.4 當輸入的資料有空白 去做偵測整理
+'''開頭結尾
+csv_data 給abcd值
+'''feature
+第一筆資料
+第二筆資料
+第三筆資料'''
+
+p.5
+dropna只要有一筆資料是缺的 就把它刪掉
+
+p.6
+內插 imputer 那上下兩個的平均值進去nan裡面
+median中位數
+
+p,7
+使用imputer這個函數必須搭配fit跟transform
+
+p.8
+使用estimator必須搭配fit跟predict跟transform
+
+p.10
+ordinal 就是會依照排序排
+
+p.14
+class_le.fit_transform = fit跟transform
+
+p.15
+:全部的row
+
+p.16
+onehot 指定的那個就是1其他為0
+
+p.27
+菱形裡面是weight可存在的地方
+菱形交界都在邊角點
+圓形交界是在圓形與圓形的交界處
+
+p.32
+X=要去掉的東西
+就是扣掉比較不重要的feature為了達到好的accurancy
+
+p/40
+selectfrommodel threshold就是我的要求!
+
+

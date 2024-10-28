@@ -1,0 +1,50 @@
+t1
+Total Cost = 28
+0.000u 0.001s 0:00.00 0.0%      0+0k 0+0io 0pf+0w
+
+t2
+Total Cost = 84
+0.004u 0.000s 0:00.00 0.0%      0+0k 0+0io 0pf+0w
+
+t3
+Total Cost = 105
+0.042u 0.000s 0:00.04 100.0%    0+0k 8+0io 0pf+0w
+
+t4
+Total Cost = 132
+1.241u 0.017s 0:01.26 99.2%     0+0k 0+0io 0pf+0w
+
+t5
+Total Cost = 153
+26.001u 0.241s 0:26.25 99.9%    0+0k 0+0io 0pf+0w
+
+t6
+Total Cost = 166
+201.261u 1.443s 3:22.73 99.9%   0+0k 8+0io 0pf+0w
+
+
+Validation Min: 79
+1 : Charlottesville
+2 : Bellevue
+3 : Palo Alto
+4 : Manhattan
+5 : Madison
+6 : Iowa City
+7 : Ann Arbor
+8 : Rochester
+9 : Santa Cruz
+10 : Corvallis
+11 : Ann Arbor
+--------------------------
+1 : Ann Arbor
+2 : Rochester
+3 : Palo Alto
+4 : Manhattan
+5 : Madison
+6 : Iowa City
+7 : Bellevue
+8 : Charlottesville
+9 : Santa Cruz
+10 : Corvallis
+11 : Ann Arbor
+Total Cost = 84

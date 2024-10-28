@@ -1,0 +1,18 @@
+p2,dat
+sorted
+0.121u 0.515s 0:01.30 48.4%     0+0k 0+0io 0pf+0w
+not sorted
+0.166u 0.491s 0:01.34 48.5%     0+0k 0+0io 0pf+0w
+increasing sorted
+0.124u 0.483s 0:01.23 48.7%     0+0k 0+0io 0pf+0w
+
+p3.dat :
+ 81.702u 297.542s 57:02.41 11.0% 0+0k 8+0io 0pf+0w
+ 
+ 
+p3.dat
+decreasing sorted 
+85.839u 332.935s 56:31.72 12.3% 0+0k 0+0io 0pf+0w
+increasing sorted
+89.439u 329.779s 50:11.32 13.9% 0+0k 0+0io 0pf+0w
+non-sorted

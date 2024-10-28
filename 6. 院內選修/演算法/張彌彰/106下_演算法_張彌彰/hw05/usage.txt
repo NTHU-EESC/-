@@ -1,0 +1,3 @@
+Usage:
+type command
+cat player.txt tour1.txt tour2.txt ... tour5.txt | ./a.out

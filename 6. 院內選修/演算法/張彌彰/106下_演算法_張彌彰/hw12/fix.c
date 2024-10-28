@@ -1,0 +1,176 @@
+/******************************************************
+  EE3980 Algorithms HW12 Travelling Salesperson Problem
+  Li-Yu Feng 104061212
+  Date:2018/5/25
+*******************************************************/
+
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define INF 999
+
+int maxCost;
+int *maxRoute;
+int **CostMat;
+int N;
+
+int rowMax(int row, int *Perm, int traveled){
+	int max = 0;
+	int *list;
+	int i;
+
+	list = malloc( N * sizeof(int) );
+	memcpy( list, CostMat[row], N * sizeof(int) );
+	
+	for (i = 0; i < traveled; i++)
+		list[ Perm[i] ] = 0 ;
+
+	for (i = 0; i < N; i++){
+		if ( list[i] > max ) max = list[i];
+	}
+
+	free(list);
+	return max;
+}
+
+void printResult(char **city){			//print min path and cost
+	int i;
+
+	printf("Minimum distance route:\n");
+	for (i = 0; i < N-1 ;i++){
+		printf("  %s -> %s\n",city[ maxRoute[i] ], city[ maxRoute[i+1] ]);
+	}
+	printf("  %s -> %s\n",city[ maxRoute[N-1] ], city[ maxRoute[0] ]);
+	printf("Total distance : %d \n", maxCost );
+}
+
+void InsertionSort(int *list,int n){
+    int i,j;
+    int temp;
+
+
+    //for ( i = 0; i < n; ++i)
+    //{
+   // 	printf(" %d\n",list[i] );
+    //}
+    printf("------------------\n");
+    for(j = 1; j < n; j++){
+        temp = list[j];
+        
+        i = j-1;
+        while((i>=0) && (temp > list[i] ) ){
+            list[i+1] = list[i];
+            i--;
+        }
+        list[i+1] = temp;
+
+    }
+    //for ( i = 0; i < n; ++i)
+    //{
+    //	printf(" %d\n",list[i] );
+    //}
+}
+
+int Pandita(void){
+	int *A;//A[N]={};
+	int Per=0,i,j=0,k=0,value;
+	int m,n;
+	int M = N-1;
+	int cost;
+	int bound;
+
+	A = malloc( M * sizeof(int) );
+	
+	for(i=1;i<= M;i++)						//
+		A[i-1]=i;							//initialize A to be 1,2,3...N
+	for(;;){
+		printf("permutation #%d:",++Per);	//
+		for(i=0;i< M;i++)					//
+			printf(" %d",A[i]);				//print permutation
+		printf("\n");
+/////////////////////////////////////
+		cost = CostMat[0][ A[0] ];
+		for (m = 0; m < M-1; m++)
+			cost += CostMat[ A[m] ][ A[m+1] ];
+		cost += CostMat[ A[M-1] ][0];
+		
+		if(cost > maxCost){
+			maxCost = cost;
+			memcpy(maxRoute + 1, A, M *sizeof(int));
+		}
+
+
+////////////////////////////////////
+		for(i=M-2;i>=0 && A[i]>=A[i+1];i--){}
+			j=i;							//find largest j, A[j]<A[j+1]
+		if(i==-1){							//if j is not found
+			printf("  Total number of permutations is %d\n",Per);
+			return 0;						//that's the last permutation
+		}
+		for(i=M-1;i>=0 && A[i]<=A[j];i--){}	//
+			k=i;							//find largest k A[k]>A[j]
+		value=A[j];							//
+		A[j]=A[k];							//
+		A[k]=value;							//swap A[j] and A[k]
+		for(i=1; j+1 < M-i ; j++,i++){		//
+			value=A[j+1];					//
+			A[j+1]=A[M-i];					//reverse the value
+			A[M-i]=value;					//from A[j+1] to  A[N-1]
+		}
+	}	
+}
+
+
+
+int main(){
+
+	int i,j; 
+
+	char **city;
+	int *visitlst;
+	int *sollst;
+
+
+	scanf(" %d", &N);
+
+	maxCost = 0;
+	maxRoute = malloc(N * sizeof(int));
+	maxRoute[0] = 0;
+
+	city = malloc(N * sizeof(char *));
+	CostMat = malloc(N * sizeof(int *));
+
+	for(i = 0; i< N; i++){
+		city[i] = malloc(sizeof(char*));
+		CostMat[i] = malloc(N * sizeof(int) );
+	}
+
+	visitlst = calloc(N, sizeof(int));
+	sollst = calloc(N, sizeof(int));
+
+
+	for(i = 0; i <N; i++){
+		scanf(" %[^\n]", city[i]);
+
+		getchar();
+
+		printf("%d %s\n",i+1, city[i]);
+	}
+	for(i = 0; i< N; i++)
+		for(j = 0; j < N; j++)
+		    scanf("%d", &CostMat[i][j]);
+	
+	for( i = 0; i < N; i++)	CostMat[i][i] = 0;
+
+	for(i = 0; i< N; i++){
+		for(j = 0; j < N; j++)
+			printf("%5d ", CostMat[i][j]);
+		printf("\n");
+	}
+	Pandita();
+
+	printf("%d\n",maxCost );
+	printResult(city);
+	return 0;
+}
+

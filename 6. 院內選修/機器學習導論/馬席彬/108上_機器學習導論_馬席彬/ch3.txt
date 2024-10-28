@@ -1,0 +1,63 @@
+ch3 
+
+p.40
+hyperplane :　2d->線 3D->面 4D->hyperplane
+
+p.43
+cost function = 1/2||w||^2 這個值要越小越好
+
+p.45 
+c=hyperparameter 無法用dataset去train出來
+
+p.55 
+r也是hyperparameter 
+karnel function->兩個sameple之間他們的相似度是多少
+
+p.56
+training 之後的結果
+
+p.57
+還有加unseen的 70拿來train 30拿來test 圓圈就是測試結果
+
+p.58
+misclassified錯誤率
+
+p.66
+要選淘汰率大約五十五十趴地先做
+m=分成幾種種類  like p.63
+
+p.68
+CART:Gini
+ID3:entropy
+
+p.71
+當某一類等於0的時候impurity會最小
+
+p.73
+tree.fit 就是拿鳶尾花的date去做training 然後裡面的x_train,y_train都是沒有事先做scaling的
+
+p.74
+劃出dicisiontree like p.75  但是要先裝那兩個package
+
+p.77
+ensemble: a group of items viewed as a model 整合學習
+一個正確的ensemble learning要滿足:
+1. different models
+2. each accurancy>50%
+
+p.78 
+(圈起來的部分):overfitting
+
+p.80
+with replacement:每次抽的時候都是N個 取完之後還會再放回去
+
+p.82
+有knd三個parameters, 但真正需要自己設定的只有k值
+
+p.83
+n_jobs:用Cpu幾核心去跑
+n_estimators: 就是k的值
+
+p.86
+會跟最近的一樣
+
