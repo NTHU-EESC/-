@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1496425752 source:c:\users\user\desktop\ds_hw4\main.cpp
+	<iostream>
+	<stack>
+	<fstream>
+	<stdlib.h>
+

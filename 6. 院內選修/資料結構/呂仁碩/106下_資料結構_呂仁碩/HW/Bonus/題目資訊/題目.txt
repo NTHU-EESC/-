@@ -1,0 +1,88 @@
+https://acm.cs.nthu.edu.tw/problem/11937/
+
+11937 - QuickSort for Molecules   
+Status  |  Limits 
+Description
+Sampe input/out 就是測資1。測資 2~8 有給定分子量。
+
+Group 的大小最大約 1800 (i.e., 排序 1800 個分子)。
+
+Objective
+
+Given several groups of molecules
+There may be duplicated molecules
+Each molecule has
+A name string (e.g., "caffeine")
+A formula string (e.g., "C8H10N4O2")
+Molecular mass (can be zero or non-zero)
+A zero means that your program needs to calculate the mass
+A non-zero value means the mass is given
+Quicksort each group of molecules according to the ascending order of molecular mass
+Print out the molecules and also report the number of swaps used during Quicksort
+Quicksort
+Always pick the first entry of each partition as the pivot
+Do not count swap(array, posi, posj) if posi == posj
+Online molecular mass calculator (reference only)
+https://www.webqc.org/mmcalc.php
+Input
+
+
+Output
+
+
+Sample Input  
+
+2
+6
+silicon_carbide                         SiC                               0
+gallium(III)_nitride                    GaN                               0
+caffeine                                C8H10N4O2                         0
+silicon(IV)_dioxide                     SiO2                              0
+oxygen                                  O                                 0
+hydrogen                                H2                                0
+10
+diethyl_ether                           CH3CH2OCH2CH3                 74.14
+addcrylonitrile                         H2C(CH)CN                     53.07
+amesite                                 Mg2Al(AlSiO5)(OH)4           278.71
+ammonium_hexathiocyanoplatinate(IV)     (NH4)2[Pt(SCN)6]             579.66
+maitotoxin                              C164H256Na2O68S2            3426.30
+barysilate                              MnPb8(Si2O7)3               2217.08
+montmorillonite_(clay)                  MgNaAl5(Si4O10)3(OH)6       1101.34
+uranium_hexafluoride                    F6U                          352.03
+stearic_acid                            CH3(CH2)16COOH               284.54
+cobalt(II)_ferricyanide                 Co3(Fe(CN)6)2                600.73
+
+
+Sample Output  
+
+2
+6
+hydrogen                                H2                             2.02
+oxygen                                  O                             16.00
+silicon_carbide                         SiC                           40.10
+silicon(IV)_dioxide                     SiO2                          60.09
+gallium(III)_nitride                    GaN                           83.73
+caffeine                                C8H10N4O2                    194.22
+5 swaps during qsort
+10
+addcrylonitrile                         H2C(CH)CN                     53.07
+diethyl_ether                           CH3CH2OCH2CH3                 74.14
+amesite                                 Mg2Al(AlSiO5)(OH)4           278.71
+stearic_acid                            CH3(CH2)16COOH               284.54
+uranium_hexafluoride                    F6U                          352.03
+ammonium_hexathiocyanoplatinate(IV)     (NH4)2[Pt(SCN)6]             579.66
+cobalt(II)_ferricyanide                 Co3(Fe(CN)6)2                600.73
+montmorillonite_(clay)                  MgNaAl5(Si4O10)3(OH)6       1101.34
+barysilate                              MnPb8(Si2O7)3               2217.08
+maitotoxin                              C164H256Na2O68S2            3426.30
+8 swaps during qsort
+
+Tags
+
+
+
+Discuss
+
+
+
+Contact us: nthucsoj@gmail.comc NTHU Online Judge 2015, Templates are from Bootswatch Project2018/5/28 00:16:33

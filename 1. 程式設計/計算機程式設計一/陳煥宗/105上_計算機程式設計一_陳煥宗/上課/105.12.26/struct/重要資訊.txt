@@ -1,0 +1,24 @@
+typedef struct t_data {
+    int size;
+    int * ptr;
+} DATA;
+void create_data(DATA *z, int sz)
+{
+    int * t;
+    int i;
+    z->size = sz;
+    z->ptr = (int *) malloc(sz*sizeof(int));  //***ptr記住第一個的位置
+    t = z->ptr;
+    for (i=0; i< sz; i++)  {  //***
+        t[i] = i;
+    }
+}
+void show_data(DATA d)
+{
+    int i;
+    printf("%u\n", sizeof(d));  //占"一個int"+"一個int指標"的空間
+    for (i=0; i<d.size; i++) {
+        printf("%d ", (d.ptr)[i]);
+        if ((i+1)%10 == 0) printf("\n");
+    }
+}

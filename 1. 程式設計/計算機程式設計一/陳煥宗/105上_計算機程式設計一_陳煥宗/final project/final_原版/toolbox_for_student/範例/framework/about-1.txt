@@ -1,0 +1,6 @@
+Normal mode: 
+	try to avoid the letters bumping into the ground, 
+	you only have three lives.
+Special mode: 
+	you will have some special props. 
+	TAB->fire all the letters ctrl->one more heart

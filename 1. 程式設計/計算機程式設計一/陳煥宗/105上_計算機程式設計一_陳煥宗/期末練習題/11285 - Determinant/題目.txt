@@ -1,0 +1,37 @@
+11285 - Determinant   
+Status  |  Limits Submit
+Description
+Determinant is a value computed from all the elements of a square matrix.  A determinant of an N-by-N matrix can be recursively computed from N determinant (N-1)-by(N-1) sub-matrices (minors).  You may check the examples below (from Wikipedia):
+
+4-by-4 example:
+{\displaystyle {\begin{vmatrix}a&b&c&d\\e&f&g&h\\i&j&k&l\\m&n&o&p\end{vmatrix}}=a\,{\begin{vmatrix}f&g&h\\j&k&l\\n&o&p\end{vmatrix}}-b\,{\begin{vmatrix}e&g&h\\i&k&l\\m&o&p\end{vmatrix}}+c\,{\begin{vmatrix}e&f&h\\i&j&l\\m&n&p\end{vmatrix}}-d\,{\begin{vmatrix}e&f&g\\i&j&k\\m&n&o\end{vmatrix}}.}
+
+3-by-3 example:
+{\displaystyle {\begin{aligned}|A|={\begin{vmatrix}a&b&c\\d&e&f\\g&h&i\end{vmatrix}}&=a\,{\begin{vmatrix}e&f\\h&i\end{vmatrix}}-b\,{\begin{vmatrix}d&f\\g&i\end{vmatrix}}+c\,{\begin{vmatrix}d&e\\g&h\end{vmatrix}}\\&=aei+bfg+cdh-ceg-bdi-afh.\end{aligned}}}
+
+2-by-2 example:
+{\displaystyle {\begin{aligned}|A|={\begin{vmatrix}a&b\\c&d\end{vmatrix}}=ad-bc.\end{aligned}}}
+
+In other words, you may calculate the determinant value by expanding the original determinant along the first row, multiplying each element by its corresponding minor,  multiplying each product by the elements in the alternating series 1, -1, 1, -1, ... accordingly, and then summing up all the products.
+
+For more details you may check:
+
+https://en.wikipedia.org/wiki/Determinant#n_.C3.97_n_matrices
+or
+https://people.richland.edu/james/lecture/m116/matrices/determinant.html
+
+Input
+The first line contains an integer n (2 <= n <= 8), specifying the size of the square matrix A. Then following next n lines, each line containing n integers, define the entries of the matrix A. The range of values in the entries is from -4 to 4.
+
+Output
+For each case, output one line with the determinant of matrix A.
+
+Sample Input  Download
+
+3
+1 2 3
+-2 1 0
+0 -3 -1
+Sample Output  Download
+
+13

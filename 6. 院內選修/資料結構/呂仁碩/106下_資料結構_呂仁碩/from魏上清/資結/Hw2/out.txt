@@ -1,0 +1,2 @@
+List
+(paper,50)->(paper,25)->(comb,270)->(pen,45)->(mug,250)->(book,350)

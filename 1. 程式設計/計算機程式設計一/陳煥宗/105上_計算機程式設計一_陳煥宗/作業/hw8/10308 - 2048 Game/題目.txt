@@ -1,0 +1,114 @@
+10308 - Lab09   
+
+Description
+The game of 2048 is very simple. Given a 4x4 map containing tiles and spaces. The values are displayed on the tiles, and the spaces are displayed as 0. The values of tiles are always the power of 2. For example,
+    2    2   64  128
+    4    0    4   16
+    4    4    4    4
+    0    0    2    0
+is a valid map.
+
+We are able to slide the tiles in only down direction. The rules of sliding is defined as follows:
+1. All tiles slide past spaces. If you move the puzzle to the bottom, all spaces will end up on the top.
+2. After sliding to collapse spaces, any tiles with the same value combine and the remainder of the column slides to fill in the hole.
+3. One tile can only combine(be combined) once.
+4. The combination always starts from the bottom.
+5. Contrary to the famous game of 2048, there are no new tiles generated.
+
+For instance if we have the map above, after we slide the tiles once, the map becomes
+    0    0    0    0
+    0    0   64  128
+    2    2    8   16
+    8    4    2    4
+
+Your job is to output the number of spaces of each column after sliding the tiles.
+
+Hint:
+
+#include 
+
+#define WIDTH 4
+#define HEIGHT 4
+
+int map[HEIGHT][WIDTH];
+
+void collapse(){
+    /* your code here */
+}
+
+void slide(){
+    /* your code here */
+}
+
+void show(){
+    /* your code here */
+}
+
+int main()
+{
+    int N, d;
+    int i, j;
+
+    scanf("%d", &N);
+    for(i = 0; i < HEIGHT; i++){
+        for(j = 0; j < WIDTH; j++){
+            scanf("%d", &map[i][j]);
+        }
+    }
+
+    for(i = 0; i < N; i++){
+        slide();
+    }
+
+    show();
+
+    return 0;
+}
+Input
+N (the count of slides)
+The map
+
+Output
+The number of spaces of each column
+
+Use "%d " to print each number. Print a newline '\n' at the end.
+Note that the value of tiles will not exceed 8192.
+
+Sample Input
+1                                                
+    2    2   64  128               	
+    4    0    4   16               	
+    4    4    4    4                	
+    0    0    2    0                  
+
+2
+	2	4	0	128
+	2	2	2	64
+	4	2	2	32
+	8	2	4	0
+
+2                                                
+    2    2    8  128               	
+    2    8    2   16               	
+    2    4    2    4                	
+    2    16   4    4 
+
+1
+2 2 2 2
+0 0 0 0
+0 0 0 0
+2 2 2 2
+
+
+
+EOF
+Sample Output
+2 2 1 1  
+      
+2 1 3 1
+
+3 0 2 1  
+
+3 3 3 3
+  
+EOF

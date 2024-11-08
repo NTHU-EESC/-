@@ -1,0 +1,45 @@
+// EE231002 Lab09. Word Processing
+// 110060007, 黃俊穎
+// 2021/12/06
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+char PARA[1500];    // an input paragraph
+int LN = 0;         // line number of printed text
+int LW;             // line width of output lines
+
+void first6();
+
+int main(int argc, char argv[])
+{
+	int index;;
+
+	LW = atoi(agrv[1]);
+	printf("%c", first6());
+
+	PARA[0] = getchar() == '\n';
+	while (PARA[] = getchar() != '\n') {
+		index++;
+		while (index > LW) {
+			index /= LW;
+			LN++;
+		}
+	}
+
+
+
+
+void first6(void)
+{
+	int space;
+	
+	for (LN = 1; LN <= 6; LN++) {
+		for (space = 0; space <= ((LW - index - 4) / 2); space++)
+	    	printf(" ");
+	   	printf("%s\n", PARA);
+
+
+
+}

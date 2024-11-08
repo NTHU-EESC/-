@@ -1,0 +1,121 @@
+10115 - moocHW4a   
+
+Description
+假設只能使用兩種符號來組成字串，譬如 IOIOI 或 OOII，都是由 I 和 O 組成，長度分別是 5 和 4。如果給定一個這樣的字串，同時又告訴你其中只有N個符號是正確的，能否把全部可能的答案都產生出來？例如輸入的字串是 TTTFF，然後又跟你說其中只對了 4 個符號，則可能的答案應該會有下面五種：
+TTTFT
+TTTTF
+TTFFF
+TFTFF
+FTTFF
+再舉一個例子，如果輸入的字串是 OXOX，而其中只有 2 個符號是對的，則可能的答案會有底下六種：
+OXXO
+OOOO
+OOXX
+XXOO
+XXXX
+XOOX
+答案要依照一定順序列出。決定順序的規則如下：盡量讓靠右邊的符號先變，盡量讓靠左邊的符號維持不變。以上面的輸入字串 OXOX (2個符號正確)為例，答案 OXXO 會排 OOOO 前面，因為 OXXO 和原本的輸入字串 OXOX 的最左兩個符號是相同的，但是 OOOO 和原本的輸入字串 OXOX 則是左邊第二個符號就不相同，所以 OXXO 的順位高於 OOOO。同理可以去檢驗其他順序，例如答案OOXX 順位高於 XXOO，因為OOXX 最左邊的符號和原輸入 OXOX 相同，但 XXOO 最左邊的符號就已經和 OXOX 不同。
+再看一個範例：假設構成的符號有P 和 Q，輸入的字串是PPP，只對 1 個符號，則答案是
+PQQ
+QPQ
+QQP
+註:這一題可以自己寫，也可以直接改程式框架，寫出 void check_bits(int cur_bit, int num_hits)。
+ 
+
+Hint:
+
+#include <stdio.h>
+#include <string.h>
+#define MAXBITS 16
+
+char bits[3];
+char input[MAXBITS+1];
+char answer[MAXBITS+1];
+int NBITS;
+
+void check_bits(int cur_bit, int num_hits);
+char flip(char ch);
+
+int main(void)
+{
+    int nhits;
+
+    /* Read the two symbols for the binary bits,
+    e.g, OI, 01, OX, or -+, etc. */
+    scanf("%2s", bits);
+
+    /* Read the input bit string. */
+    scanf("%s", input);
+    NBITS = strlen(input);
+
+    /* The answers will be stored in the array answer[] */
+    answer[NBITS] = '\0';
+
+    /* Read the number of correct bits */
+    scanf("%d", &nhits);
+
+    /* Call the recursive function check_bits
+    Start from the leftmost bit. */
+    check_bits(0, nhits);
+
+    return 0;
+}
+
+/*
+1.
+The value of cur_bit keeps increasing as we
+recursively call check_bits().
+2.
+If input[cur_bit] is correct, the value of num_hits
+should decrease; otherwise we should keep num_hits unchanged
+and check the next bit.
+3.
+Copy the bit from input[cur_bit] or flip the bit,
+and store the result in the array answer[].
+4.
+If the recursive call reaches the end of the input,
+it is done and we may print the answer using
+    printf("%s
+", answer);
+*/
+void check_bits(int cur_bit, int num_hits)
+{
+    /* YOUR CODE */
+
+}
+
+/*
+Flip the bit. For example,
+0 <--> 1
+O <--> I
+...
+*/
+char flip(char ch)
+{
+    return ( (ch==bits[0]) ? bits[1] : bits[0] );
+}
+Input
+輸入資料會有三行。
+第一行是兩個相連的字元，用來指出構成字串的符號是哪兩個。 (例如 "OI")
+第二行是輸入的字串，假設字串長度最多不超過 16 個字元。 (例如 "IIOOIIOO")
+第三行是正確的符號個數，假設正確的個數一定大於 0，且小於等於字串長度。
+
+Output
+每一行顯示一種可能的答案，結尾都要換行 (都要加 )。要注意輸出的答案的順序。列出的順序如果沒有按照題目規定，Online Judge 會判定為錯誤。
+
+Sample Input
+XD
+DDDDDDD
+6 
+EOF
+Sample Output
+DDDDDDX
+DDDDDXD
+DDDDXDD
+DDDXDDD
+DDXDDDD
+DXDDDDD
+XDDDDDD
+  
+EOF
+Tags

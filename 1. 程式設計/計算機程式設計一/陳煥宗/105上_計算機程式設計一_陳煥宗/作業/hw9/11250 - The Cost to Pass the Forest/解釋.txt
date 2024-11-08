@@ -1,0 +1,88 @@
+#include<stdio.h>
+
+int min;
+
+void route(char map[105][105],int walk[105][105],int row,int col,int path);
+
+int main(void)
+{
+    min=10000;	//初始化min值為10000，因為步數<10000
+    char map[105][105] = {0};
+    int walk[105][105] = {0};
+    int row, col;
+    int now_r, now_c;
+    int i, j, k;
+
+    scanf("%d %d", &row, &col);
+    for(i=0;i<=row+1;i++){
+        for(j=0;j<=col+1;j++){
+            map[i][j] = 'b';
+        }
+    }
+    char ch;
+    scanf("%c",&ch);
+    for(i=1;i<=row;i++){
+        for(j=1;j<=col;j++){
+            scanf("%c",&map[i][j]);
+            if(map[i][j]=='S'){
+                walk[i][j]=1;
+                now_r = i;	//此為把'S'在的座標存起來，做為遞迴的起點
+                now_c = j;
+            }
+        }
+        scanf("%c",&ch);	//因為每輸入一行地圖後都晦暗ENTER換行，但是"換行"的字元我們不需要存
+				  ，因此需要另一個"字元"ch去吸收"換行"字元。
+    }
+
+    route(map,walk,now_r,now_c,1);	//把map & walk的指標傳入route的function，(now_r,now_c)為'S'的座標
+					  ；1為走了1步
+    if(min==10000) min = 0;
+    printf("%d\n",min);
+    return 0;
+}
+
+void route(char map[105][105],int walk[105][105],int i,int j,int path)
+{
+    if((map[i+1][j]=='#')&&(walk[i+1][j]==0)){	//walk[i+1][j]==0表示(i+1,j)尚未走過
+						//map[i+1][j]=='#'表示如果此座標是路
+        path++;
+        walk[i+1][j] = path;	//把walk[i+1][j]存入現在走到的步數
+        route(map,walk,i+1,j,path);
+        path--;		//上面的route做完後，把path & walk[i+1][j]回復到近來這個if前的狀態
+			  ，並進入下面的if判斷式。
+        walk[i+1][j] = 0;
+    }
+    if((map[i-1][j]=='#')&&(walk[i-1][j]==0)){
+        path++;
+        walk[i-1][j] = path;
+        route(map,walk,i-1,j,path);
+        path--;
+        walk[i-1][j] = 0;
+    }
+    if((map[i][j+1]=='#')&&(walk[i][j+1]==0)){
+        path++;
+        walk[i][j+1] = path;
+        route(map,walk,i,j+1,path);
+        path--;
+        walk[i][j+1] = 0;
+    }
+    if((map[i][j-1]=='#')&&(walk[i][j-1]==0)){
+        path++;
+        walk[i][j-1] = path;
+        route(map,walk,i,j-1,path);
+        path--;
+        walk[i][j-1] = 0;
+    }
+    if(map[i+1][j]=='T'){	
+        if(path<min) min = path;
+    }
+    if(map[i-1][j]=='T'){
+        if(path<min) min = path;
+    }
+    if(map[i][j+1]=='T'){
+        if(path<min) min = path;
+    }
+    if(map[i][j-1]=='T'){
+        if(path<min) min = path;
+    }
+}

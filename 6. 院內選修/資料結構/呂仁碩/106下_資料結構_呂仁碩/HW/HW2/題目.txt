@@ -1,0 +1,87 @@
+https://acm.cs.nthu.edu.tw/problem/11876/
+
+11876 - Linked List (for the EE class)   
+Status  |  Limits 
+Description
+一定要用自己寫的linked list完成作業，不可以使用array，也不可以#include<list>或使用類似的現成 libraray
+不過STL list非常好用，雖然不能用於此作業，仍可以學習 https://www.cprogramming.com/tutorial/stl/stllist.html
+第一個測資就是sample input/output
+ 
+Implement a linked list to store Christmas gifts.
+Each node stores a gift and its corresponding price
+Price ranges from 0 to 999
+Each gift price is unique, two duplicate prices will not exist at the same time
+You should implement 4 operations below
+InsertBack(gift, price)
+Insert a gift to the end of the linked list
+Example:
+Original list: (Candy,50)->(book,350)
+After InsertBack(Toy, 120)
+Updated list (Candy,50)->(book,350)->(Toy,120)
+InsertAfter(gift, price, priceToInsertAfter)
+If priceToInsertAfter does not exist in the linked list, do nothing
+Example1:
+Original list: (Candy,50)->(book,350)
+After InsertAfter(Toy, 120, 50)
+Updated list: (Candy,50)->(Toy,120)->(book,350)
+Example2:
+Original list: (Candy, 50)->(book,350)
+After InsertAfter(Toy, 120, 70)
+Updated list: (Candy, 50)->(book,350)
+Delete (price)
+Remove the gift matched the input price from the linked list
+If this price does not exist in the linked list, do nothing
+Example1:
+Original list: (Candy,50)->(book,350)
+After Delete(50)
+Updated list: (book,350)
+Example2:
+Original list: (Candy,50)->(book,350)
+After Delete(20)
+Updated list: (Candy,50)->(book,350)
+Reverse()
+Reverse the linked list
+Example:
+Original list: (Candy,50)->(book,350)
+After Reverse()
+Updated list: (book,350)->(Candy,50)
+ 
+Input
+One (not many) sequence of operations.  Each line describes one operation.
+
+The last line is "End".
+
+Output
+Print "Empty" or "List" first.
+If not empty, then print the entire list of gifts and their corresponding prices.
+Connect with symbols “->”
+No space in between
+Sample Input  
+
+InsertBack dog 15
+InsertBack paper 25
+InsertBack pen 45
+InsertBack book 350
+InsertAfter mug 250 45
+Delete 25
+Reverse
+InsertBack paper 50
+InsertAfter comb 350 25
+InsertAfter comb 270 45
+Reverse
+End
+
+Sample Output  
+
+List
+(paper,50)->(dog,15)->(comb,270)->(pen,45)->(mug,250)->(book,350)
+
+Tags
+
+
+
+Discuss
+
+
+
+Contact us: nthucsoj@gmail.comc NTHU Online Judge 2015, Templates are from Bootswatch Project2018/4/11 14:11:16

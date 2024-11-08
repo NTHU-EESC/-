@@ -1,0 +1,55 @@
+10310 - Math Loop   
+
+Description
+Observe the following instructions to solve a simple problem.
+
+1.Input a sequence A, and then arrange the sequence number from large to small in order to get the new sequence B.
+
+2.Do in the same way by step 1, but this time arrange the sequence A from small to large in order to get another sequence C.
+
+3.Calculate the difference of B and C, that is, B-C.
+
+4.Use B-C in step 3 as a new sequence A and repeat the above steps 1 to 3. 
+
+5.The repetitions end when a difference has been observed in the previous operations.
+
+6.Finally you need to print the times that step 3 is executed.
+
+ 
+
+Note: the input won¡¦t be 0.
+
+ 
+
+Example: 
+
+For the sequence A=3412, the sequence B from large to small is 4321. Besides, the sequence C from small to large is 1234. 
+Then follow the above instructions, we have 4321 - 1234 = 3087, 8730 - 378 = 8352, 8532 - 2358 = 6174, 7641 - 1467 = 6174.
+In this case, you should print the number 4.
+
+For another sequence A=12345, the sequence B from large to small is 54321. Besides, the sequence C from small to large is 12345. 
+Then follow the above instructions, we have 54321 - 12345 = 41976, 97641 - 14679 = 82962, 98622 - 22689 = 75933, 97533 - 33579 = 63954, 96543 - 34569 = 61974, 97641 - 14769 = 82962.
+In this case, you should print the number 6.
+
+ 
+
+Input
+The input sequence contains no more than six digits.
+
+ 
+
+
+Output
+The times that step 3 is executed.
+
+Note that there is a newline character at the end of the output.
+
+ 
+
+
+Sample Input
+3412  
+EOF
+Sample Output
+4  
+EOF

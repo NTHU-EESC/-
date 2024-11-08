@@ -1,0 +1,4 @@
+There are two modes you can choose, one is normal mode, you need to avoid the letters bumping into the bricks. 
+The way to delete letters is pressing the corresponding letters on your keyboard, and you only have three lives total. 
+The other one is special mode. During the process, you may see some specials props falling down, and they will help you have better scores. 
+The way how to operate it is the same as the normal mode. So, good luck!

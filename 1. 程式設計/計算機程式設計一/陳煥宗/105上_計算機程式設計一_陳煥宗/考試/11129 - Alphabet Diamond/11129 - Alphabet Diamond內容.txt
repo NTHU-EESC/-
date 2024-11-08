@@ -1,0 +1,31 @@
+Description
+使用者輸入正整數 x，根據 x 印出相應的實心菱形，其中 x 表示菱形層數。而菱形最外層是 A，第二層為 B，每往裡面一層，就印下個字母。(x<=26)
+
+請注意，在每一行最後面不需要補空白，只需要換行即可。
+
+ 
+
+Input
+一正整數 x, x<=26.
+
+Output
+An alphabet diamond (參考 output sample)
+
+Sample Input
+3 
+EOF
+
+Sample Output
+　　Ａ
+　ＡＢＡ
+ＡＢＣＢＡ
+　ＡＢＡ
+　　Ａ
+
+EOF
+
+
+
+
+http://acm.cs.nthu.edu.tw/problem/11129/
+

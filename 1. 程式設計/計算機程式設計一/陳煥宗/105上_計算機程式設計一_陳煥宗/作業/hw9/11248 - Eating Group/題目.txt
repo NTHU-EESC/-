@@ -1,0 +1,53 @@
+11248 - Eating Group   
+Status  |  Limits Submit
+Description
+[Partial Judge: C]
+
+There are N hungry people, numbered from 1 to N. Each of them is going to have a lunch with someone else or alone.
+
+With the given input, try to find out that which restaurant to go for each person. Each restaurant is also represented by an integer.
+
+ 
+
+Notice:
+
+You need to implement all three functions defined in the 11248.h header file.
+
+There are two arrays of length 100 (a,b) leaved for you to implement your method. That should be enough.
+
+ 
+
+Read input hint:
+
+int i, a;
+scanf("%d" , &a);
+for ( i=0; i<N-1; i++) {
+    scanf(",%d" , &a);
+    ...
+
+}
+
+Input
+The input contains three lines.
+
+First line only has a single number N (N<=100), representing the total number of hungry people.
+
+Second line is a comma-seperated sequence of N integers. The ith integer indicates who will ith person eat with. 0 means unknown.
+
+Third line is also a comma-seperated sequence of N integers. The ith integer indicates which restaurant will ith person eat at. 0 means unknown. No '\n' at the end of this line.
+
+Note, ith entry in second line is zero iff ith entry in third line is non-zero.
+
+Output
+Output a line of N comma saperated integers with no trailing \n behind.
+
+Each integer indicates the restaurant to eat for the corresponding person.
+
+Sample Input  Download
+
+10
+9,7,1,6,0,8,10,0,0,9
+0,0,0,0,3,0,0,4,1,0
+Sample Output  Download
+
+1,1,1,4,3,4,1,4,1,1

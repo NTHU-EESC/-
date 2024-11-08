@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <string.h>
+
+char PARA[1500];	// an input paragraph
+int LN = 0;			// line number of printed text
+int LW;				// line width of output lines
+
+int read_para(void);
+void print_lines(void);
+void print_lines(void);
+void print_titles(int length);
+void print_para(int length);
+
+int main(int argc, char *argv[]) 
+{
+	int i;
+
+	LW = atoi(argv[1]) - 4;
+	for (i = 0; i < 6; i++) {
+		print_titles(read_para());
+	}
+	while (read_para() != -1) {
+		print_para(read_para());
+	}
+}
+
+int read_para(void)
+{
+	int i = 0;
+	
+	if ((PARA[0] = getchar()) == EOF) return -1;
+	for (i = 1; (PARA[i] = getchar()) != '\n'; i++);
+	PARA[i] = '\0';
+	return i - 1;
+}
+
+void print_lines(void)
+{
+	LN++;
+	if (LN % 5 == 0) printf("%3d ", LN);
+	else printf("    ");		
+}
+
+void print_titles(int length)
+{
+	int i;
+
+	print_lines();
+	for (i = 0; i < (LW - length) / 2; i++) {
+		printf(" ");
+	}
+	printf("%s\n", PARA);
+}
+void print_para(int length) 
+{
+	int i;
+	int sp_pos;
+	
+	print_lines();
+	/*if (length == 0) {
+		print_lines();
+	}*/
+	for (i = 0; i <= length; i++) {
+		if (i % LW == 0) {
+			printf("\n");
+			print_lines();
+		}
+		printf("%c", PARA[i]);
+	}
+	printf("\n");
+}

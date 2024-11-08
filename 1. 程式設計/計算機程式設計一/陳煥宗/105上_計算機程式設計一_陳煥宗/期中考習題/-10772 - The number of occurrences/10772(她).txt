@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main(void)
+{
+    char A[4];
+    char B[10][10];
+    int numA=0;
+    int numB[10];
+    int n,i,j,k;
+	char ch;
+    while((ch=getchar())!='\n')
+          {
+               A[numA++]=ch;
+          }
+          scanf("%d",&n);
+          getchar();
+          for(i=0;i<n;i++){
+            numB[i]=0;
+            while((ch=getchar())!='\n'){
+                B[i][numB[i]++]=ch;
+            }
+          }
+          int issame;
+          int maxcount=0,count;
+          for(i=0;i<n;i++){
+            count=0;
+        for(j=0;j<numB[i]-numA+1;j++){
+            issame=1;
+            for(k=0;k<numA;k++){
+                if(A[k]!=B[i][j+k]){
+                    issame=0;
+                    break;
+                }
+            }
+
+    if(issame==1){
+        count++;
+    if(count>maxcount)
+        maxcount=count;
+    }
+        }
+          }
+    printf("%d",maxcount);
+    return 0;
+    }

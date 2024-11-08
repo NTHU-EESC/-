@@ -1,0 +1,44 @@
+11160 - GCD and LCM   
+
+Description
+Given three positive integers x, y, and z.
+
+Compute their greatest common divisor (GCD) and least common multiple (LCM).
+
+Hint : gcd(a,b,c) = gcd(gcd(a,b),c).
+
+Input
+The first line contains a positive integer N, which indicates the number of testcases in each input.
+
+In the next N lines, each line contains three positive integer X, Y, Z.
+
+ 
+
+Case 1: X, Y, Z < 10
+
+Case 2: X, Y, Z < 10^2
+
+Case 3: X, Y, Z < 10^3
+
+Case 4: X, Y, Z < 10^4
+
+Output
+For each testcase, output the GCD and LCM of X, Y, and Z in a line.
+
+Note that you have to add '\n' at the end of output.
+
+ 
+
+Sample Input
+3
+1 2 3
+2 4 8
+12 34 56
+
+EOF
+Sample Output
+1 6
+2 8
+2 2856
+
+EOF

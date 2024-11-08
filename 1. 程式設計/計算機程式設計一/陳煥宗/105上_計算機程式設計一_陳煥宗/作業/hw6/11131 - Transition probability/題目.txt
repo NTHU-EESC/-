@@ -1,0 +1,79 @@
+11131 - Transition probability   
+
+Description
+Bob is a businessman. He always stays at city A or city  B.
+
+Assume Bob stays at city A today , and we can use a transition matrix P to infer the probability of at which city will Bob stays tomorrow.
+
+e.g.
+Let  VnT = [ va , vb ]
+
+Vn is a 2 by 1 column vector.
+va denotes the probability that Bob stays at city A on n-th day,
+vb denotes the probability that Bob stay at city B on n-th day.
+After 1 day, the probability should be represented as Vn+1 , where Vn+1 = P * Vn.
+
+P is a 2 by 2 square matrix, representing the transition probability:
+
+P = ┌ p1  p2 ┐
+    └ p3  p4 ┘
+As time passes, the probability of Bob staying at city A will decrease.
+
+After n days, the probability of Bob staying at city A will smaller than or equal to a target value T.
+
+The question is :
+
+Suppose that Bob stays at city A today ( va = 1 , vb = 0)
+How many days do we need to make va smaller than or equal to the target value T ?
+Namely , n = ?
+
+Note :
+
+The test case will make va monotonically decrease .
+
+助教出的測資一定會讓 va 隨著時間增加而逐漸遞減
+
+ 
+
+Input
+There are multiple testcases in the input.
+
+The first line contains a integer N, indicating the number of testcases.
+
+You can use this format in your code:
+
+int i , N;
+
+scanf("%d",&N);
+
+for(i=0;i<N;i++){
+
+      // your code to deal with each testcase
+
+}
+The following lines are testcases.
+
+For each testcase, there are 5 floating points in a line.
+
+The 1st ~ 4th floating points (p1, p2, p3, p4) are the elements in trasition matrix P.
+
+The 5th floating point is the target value T.
+
+Output
+For each testcase.
+
+Output integer n that tell us how many days should we take to reach the target probability.
+
+And add a '\n' at the end of each output.
+
+ 
+
+Sample Input
+2
+0.6 0.3 0.4 0.7 0.43
+0.9 0.2 0.1 0.8 0.8 
+EOF
+Sample Output
+5
+3 
+EOF

@@ -1,0 +1,101 @@
+50
+daecbgf
+adgefbc 1-0-3-6-5-2-4
+acbfedg
+cgfaebd 3-0-5-2-4-6-1 OK
+abfegcdh
+dcbfhage 5-2-3-7-6-1-0-4
+abedcfg
+dbgcaef 4-1-5-0-3-6-2 OK
+aebcfd
+eafcdb 1-0-5-3-2-4 OK
+acbfeidhg
+hfgciaebd 5-3-7-1-6-4-8-0-2
+ahbcdefg
+hacebfgd 1-0-4-2-7-3-5-6 OK
+abdcfeg
+adbfcge 0-2-1-4-3-6-5 OK
+abfcdghei
+afbhdeicg 0-2-1-7-4-8-3-5-6 OK
+abcdefigh
+dgbehafci 5-2-7-0-3-6-8-1-4 OK
+adbcfge
+dagcebf 1-0-5-3-6-2-4 OK
+acbdegf
+dfcaebg 3-2-5-0-4-6-1 OK
+acbdfe
+cadebf 1-0-4-2-5-3 OK
+abcfdehg
+fbhdgaec 5-1-7-0-3-6-2-4 OK
+acbfgdhe
+bgchdeaf 6-2-0-7-1-4-3-5
+abfcde
+decbaf 4-3-5-2-0-1 OK
+acbghedfi
+gbhaecfdi 3-5-1-0-2-4-7-6-8
+abcdgfe
+bafdecg 1-0-5-3-6-2-4 OK
+abcedfgh
+abecdfhg 0-1-3-2-4-5-7-6 OK
+abcedfhg
+hebdgacf 5-2-6-1-3-7-0-4 OK
+acbhdegif
+hcidfaebg 5-1-7-0-3-6-8-2-4 OK
+afbecgd
+faebgcd 1-0-3-2-5-4-6 OK
+acbedf
+caefbd 1-0-4-2-5-3 OK
+adbcef
+bcaefd 2-5-0-1-3-4
+abdcegf
+gcfbead 5-3-6-1-4-0-2 OK
+abcefd
+ebafcd 2-1-4-0-3-5 OK
+abdefcgh
+bcfaehdg 3-0-6-4-2-1-7-5
+abcigedfh
+ibgafehcd 3-1-7-0-2-5-8-4-6 OK
+acbedhfg
+cfdagebh 3-0-6-5-2-7-1-4
+abdcfhge
+afdhbgce 0-4-2-6-1-3-5-7 OK
+baedcfg
+fgceadb 6-4-3-5-2-0-1 OK
+acbfdeg
+fcdaegb 3-1-6-0-2-4-5 OK
+baedcf
+eadfbc 4-1-0-2-5-3
+afbcegd
+fagebdc 1-0-4-6-3-2-5
+abedcfg
+fgdbcae 5-3-6-2-4-0-1 OK
+afbecd
+faebdc 1-0-3-2-5-4 OK
+abcefdgh
+dcfhbgea 7-4-1-6-2-0-5-3
+bacdef
+cdfabe 4-3-0-1-5-2
+abecfd
+aecdbf 0-4-1-2-5-3
+agbcdheif
+gahcebidf 1-0-5-3-7-2-4-6-8 OK
+abdcefghi
+dbhgifeca 8-1-0-7-6-5-3-2-4 OK
+badfec
+dfaebc 4-2-0-1-3-5
+acbdef
+cadbfe 1-0-3-2-5-4 OK
+agbcdef
+gabcdfe 1-0-2-3-4-6-5 OK
+adbfce
+dfaceb 2-0-5-1-3-4 OK
+aebdchgfi
+eadhbgcfi 1-0-4-2-6-3-5-7-8 OK
+acbdefgh
+dgehfcab 6-5-7-0-2-4-1-3
+abfcdgeh
+dechgbfa 7-5-6-2-0-4-1-3
+acbdef
+dcefab 4-1-5-0-2-3 OK
+aebfcgdh
+eafgbdch 1-0-4-2-6-3-5-7 OK

@@ -1,0 +1,40 @@
+11250 - The Cost to Pass the Forest   
+Status  |  Limits Submit
+Description
+The forest is described as follows:
+
+S: the start of the forest
+
+T: the destination of the forest
+
+#: the passway in the forest
+
+*: the trees in the forest
+
+Now please count the cost to pass through the forest.
+
+Input
+The first line of the input give two integer M N, representing the height and the width of the forest.
+
+Then the following M*N arrays gives the description of the forest.
+
+Note. 3<=M, N<=100
+
+Output
+Give the minimum cost(steps) to pass through the forest.
+
+If the destination is unreachable, the cost will be 0.
+
+Remember to print a '\n' at the end of the output.
+
+Sample Input  Download
+
+3 4
+*S##
+##**
+###T
+
+Sample Output  Download
+
+4
+

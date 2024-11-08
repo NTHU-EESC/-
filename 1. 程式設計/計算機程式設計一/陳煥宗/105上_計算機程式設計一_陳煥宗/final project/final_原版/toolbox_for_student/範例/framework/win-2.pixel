@@ -1,0 +1,134 @@
+133 200
+                                                                `8oo8                                                               `EooE~                                                              
+                                                               :8OooO:                                                ``            :8ooo8.                                                             
+                                                              `8oooooo                                                              =Ooooo8~                                                            
+                                                              8OoooooE           ~IIIIIII                        .;III;``           ooooooOO;                                                           
+                                                             IOoooooo8`~~      :o8OOOOOO8:                      :8OoOOOO8O.        `OooooooO8                                                           
+                                                            ;OoooooooO:      .oOoooooooo8:                      `IoooooooooO~  ~   ;OoooooooO= `;                                                       
+                                                            oooooooooO:     .OOooooooooo8                        ;oooooooooOO.     IOooooooooO  .                                                       
+                                                           =OooooooooO:    .8OoooooooooO=                        IOoooooooooO+     ;OooooooooO;                                                         
+                                                           ooooooooooO:    oOooooooooooO`                        ~8ooooooooooO=    ;Oooooooooo+                                                         
+                                                        `  ooooooooooO:   `8ooooooooooOO                          =Ooooooooooo8`   IOoooooooooO                                                         
+                                               `; ~+iI    .8oooooooooO:   ;Oooooooooooo~                          .OooooooooooOo:  =8oooooooooO     ;i+~                                                
+                                                  oOo8:   .Eooooooooo8:   OooooooooooOi                            =8ooooooooooE   .8oooooooooO     OoOo                                                
+                                                 IOooOE~   Eooooooooo8  :;8oooooooooO=                              IOooooooooo8.   ooooooooooO    =OooO+                                               
+                                                `8ooooO+   OooooooooOi .:Ooo+oooooO8i                                +OOoooooooo8;` =OooooooooO   ;Ooooo8;                                              
+                                                ioooooo8.  +Oooooooo8: +8OoOOoOO8O+:                                  .iO8OOOOOOoEO .8oooooooO+   OoooooOo                                              
+                                              `:Ooooooo8+  =Ooooooooo`=OOOOIIIII:                                        ;IIIIIo8oOiiEOooooooO+  :OooooooO:                                             
+                                               iOooooooOo  `Eoooooo8=ooOoI.                                                     ;OOO8#8ooooooE:  +OooooooOo                                             
+                                               Ooooooooo+   OOooooOEOoO;                                                          I8oO8OooooO=  .8ooooooooo                                             
+                                              ~8ooooooooO;  .EooooOoOEEI=+I                                                   ~:;i:I8OOOoooo8~  =8oooooooo+                                             
+                                              i8ooooooooOO   ~8ooooO88OooO88;`                                               +EOOoOO88OooooOo   =Oooooooooi                                             
+                                              iOooooooooo8.   oOooooooooooooOi~   `                                         I8ooooooooooooOI    IOoooooooo+`                                            
+                                              iOoooooooooO  ~ OOooOooooooooooO8.                                          .+OoooooooooooooOi    =oooooooooO.                                            
+                                              iOoooooooooE  8OOOOo+oooooooooooO8.                                        `8Oooooooooooooo8oOo. `ooooooooooo`                                            
+                                              ;8oooooooooE .EOO+~OoooooooooooooOo`                                      `+OoooooooooooooO~oOO8. Iooooooooo+      .                                      
+                                       ;O:     ooooooooooO +OOo` ~8oooooooooooooOo`                                     OOoooooooooooooO;  iOO8.=Oooooooooo     .Ei                                     
+                                      i8o8i   `=OoooooooO+IOOo    `+OooooooooooooO=                                    ;8ooooooooooooO+` ;  =OOo=OoooooooO+   `~OoO.~`                                  
+                                      +Ooo8I  ``8ooooooo8O8oO`      =EOooooooooooo+                                   :EoooooooooooO8+`    . +OOo8ooooooo8.   +8ooOI                                    
+                                      8ooooOo   =Ooooooo88oE.+88oi:  :=88OOOooooOOO`                                  :8OOooooooO8oI. ~:iO8Ei OO88ooooooO+   i8ooooo                                    
+                                     .8ooooo8;   +OooooO8o8EOOoooO8E=   :;=+oooo+i~                                    ~=+oOi++=:;   ;8OOoooOOEEOOoooooOE`  i8ooooo8.                                   
+                                     IOoooooo8:   OOoooooO8oooooooooOoI                                                           `=OOooooooooo8OoooooOO.  `8ooooooOI                                   
+                                     iOooooooOII= .8Oooooooooooooooooo8i                                                         `+Ooooooooooooooooooo8:  `=OoooooooI                                   
+                                     8oooooooo8;   ;8OoooooooooooooooooOo:                                                       EOoooooooooooooooOooO;   .8ooooooooo                                   
+                                     8oooooooooO    `Oo+ooooooooooooooooo8:                                                    .Ooooooooooooooooooo+8     :Oooooooooo                                   
+                                     8ooooooooo8:   IOOOOooooooooooooooooO=                                                    =8oooooooooooooooooOOOI   ;8oooooooooo                                   
+                                     8oooooooooO=  `Oo+.88oooooooooooooO8o.                                                    .o88ooooooooooooO8o.IOoI  OOoooooooooo                                   
+                                     8oooooooooo+ `+O8; ..i88OoooooO8E+:`                                                        `~+88OOooooOO8+~  `8o8  oooooooooooo                                   
+                                     =Oooooooooo8~;OO=     ` .i8EEo` `                                                               `:OEEo+=~`     OOO~Ioooooooooooi                                   
+                                     ~8ooooooooo8 oo8`   `                                                                                      ~~   =OO oooooooooo8~                                   
+                                      Oooooooooo8+OO:`=88888O++                                                                           ;++O8888O=`~OO.ooooooooooo                                    
+                                      :8oooooooo8EOOI8ooooooooO8+;`                                                                     ;o8OoooooooO8iEoO8ooooooooO~                                    
+                                    .  8OoooooooO8OE8ooooooooooooO8                                                                   `OOooooooooooooO#OO8oooooooO= ~`                                  
+                               .oo`    .OOooooooOO8OooooooooooooooO~                                                                  iOooooooooooooooO8oOooooooOE` `  :III                             
+                               oOOOo~   :OOoooooooOooooooooooooo+Oi                                                                   ~8OooooooooooooooOOooooooO8:   .+8Oo8                             
+                               EoooO8i  `.=OooooooooooooooooooooOo                                                                     .+8oooooooooooooooooooo8i    I8Oooo8                             
+                               Eooooo8+. . .iOoooooooooooooooooo: `                                                                      i8OooooooooooooooooO8I   `o8ooooo8                             
+                               8ooooooOE `   ;+OooooooooooooO8i`                                                                          .O8OooooooooooooOE=`   `OOoooooo8`                            
+                               8oooooooOoi .. =O8O8ooooooO8E;;  `                                                                           ~;O8OoooooO888OO     oOooooooo8;                            
+                               EooooooooOE~   IoE`;o:::::;;~                                                                                  `8+::::=O=~8o8`   +Ooooooooo8;                            
+                               ooooooooooO+  .+O+       .                                                                                       ~:       =O8:  ~Oooooooooo8                             
+                               +oooooooooo8~ iO8~   ``:;Io+;.`                                                                              `:;;;;;```   .8OI iEooooooooooo                             
+                               ;oooooooooooi OOO .oO8OOOOOOOO8E:                                                                           i8OOOOOOOO8O+  8o; OOoooooooooO:                             
+                               ;Oooooooooooo Oo+ OOOooooooooooo~                                                                           iooooooooooo8=`=oi 8ooooooooooO~                             
+                               .EooooooooooO~OoiIOoooooooooooO.                                                                            i8oooooooooooO+~O8~OooooooooooO`                             
+                                oOooooooooooE8OE8oooooooooooOi                                                                              oOoooooooooooO88OOooooooooooO=                              
+                                ~Eoooooooooo8O88oooooooooooo8                                                                               `8oooooooooooo88OEoooooooooo8`                              
+                                 ~8oooooooooOO8OooooooooooO8I                                                                                .oOooooooooooO8oOoooooooooO. `                             
+                                  ;ooooooooooOOooooooooooOi`                                                                               ;  .i+ooooooooooOoOooooooooO: ..                             
+                                   `8Oooooo+ooooooooooooO#                                                                                      IOooooooooooOoooooooOEI                                 
+o                                    ;8OooooooooooooooO8+;                                                                                       .oOooooooooooooooOo:    ~.                             
+E                            :I``     ~i+88OooooooOO8OI                                                                                            i8OOOooooooOOOO=       .:I~                          
+=                           iOO8EO=`;    ~I;8o8OO+=I~   `:IiI`                                                                              `=+=iI   .i+OO88O8o=      `IioOOOO                          
+                            8ooooOO8~`  `` `OoI      .:o88OO88                                                                              =8OO88=...    `=O8       `+Oooooo8`                         
+                            ooooooooOO: .`  oo:   .:+Ooooooo8:                                                                               OooooooO8+.   IO8     ;iOooooooOi                          
+                            +OooooooooO=    ooI  ~8Oooooooooo                                                                                oooooooooO8I  =O8  = ~OooooooooO=                          
+                            ;8oooooooooOo:  ooI :8ooooooooo8~                                                                                I8ooooooooo8; =O8   +Oooooooooo8~                          
+                             Oooooooooooo8~.ooI:8oooooooooo+                                                                                  =OoooooooooO`=O8 `+oooooooooooO                           
+                             ioooooooooooOE=ooIioooooooooo8:                                                                                  `OoooooooooOo=O8 =ooooooooooooO                           
+                             O8oooooooooooO~oo88oooooooooO+                                                                                    +Oooooooooo+=oOIOooooooooooo8.                           
+                             ~Ooooooooooooo+OoEOooooooooo8`                                                                                    .Ooooooooooo8oE8ooooooooooooO                            
+                              `8oooooooooooO8o8ooooooooo8I                                                                                      :8oooooooooEo8Oooooooooooo8:                            
+                               +OoooooooooooOoOoooooooo8I   ;`                                                                              :;   ;8OoooooooOoOoooooooooooOi                             
+:                               oOoooooooooooooooooooO8~   ;E8                                                                             .EE:   ~8oooooooOooooooooooooOo                              
+                                `OOooooooooooooooooo8=`  +OOoo                                                                             :8ooOi` `+8ooooooooooooooooo8o~                              
+                                 `=OOooooooooooooO8oi `i8OoooO                                                                              8oooO8i` :iOOooooooooooooOO;                                
+                                    +O88OOoOOoo8Oo~  .8OoooooO                                                                              8oooooOO`  .i88ooOOOOOO8E:                                  
+                                      `;+++i=EO8    ~8Oooooooi                                                                              +ooooooO8i~   =OE=I++I;.                                    
+                                    :        8O8.  ;8ooooooooi                                                                              +Oooooooo8=  ~8Oo                                           
+                                `  :;`       :OO.  oooooooooO;                                                                              =Oooooooooo;.;OOi           ``                              
+                              :oE8888Ooi.    iEo; :Ooooooooo8.`                                                                             .8ooooooooOo`:O8~    ~ioo888EEO;                            
+                              8oooooooOO8O=  .oo8`ioooooooooo I   ~                                                                          ooooooooooO ioO  `=o8OooooooooO                            
+                              ooooooooooooOo: iOO;8ooooooooO:                                                                                ~8ooooooooO`OOi ;8OoooooooooooO                            
+                              `8ooooooooooooOi;Oo;8ooooooooO   iO+                                                                      oo=.  OooooooooO=Oo`+OooooooooooooO;                            
+                               8OooooooooooooOoOooOooooooo8:  i8o8`                                                                    .8O8O. I8oooooooO8O8iOooooooooooooo=                             
+                               I8oooooooooooooOEOOOooooooO= `=Ooo8`                                                                    ~8ooOO` oOooooooO8OEOooooooooooooo8~                             
+                                OOoooooooooooooOOoOoooooOO  +OoooO~                                                                    :8oooOO` iOoooooOoOOoooooooooooooO=`                             
+                                ~EOooooooooooooooooooooOo  iOooooOI                                                                    IOooooOO` oOooooooooooooooooooooo8                               
+                                 ~8ooooooooooooooooooo8=  +OoooooOI                                                                    iOoooooOo  =8oooooooooooooooooooO`                               
+                                  IoooooooooooooooooO8;  ;OooooooO=                                                                    iOooooooOI  ;+OoooooooooooooooOOI  .                             
+                                   `OOoooooooooooOOOE~  `OoooooooOI                                                                    =Ooooooooi`  `EoOooooooooooooOE=                                 
+                                     I8OooooooOOO=EO8;  :OoooooooOI   ;`                                                          ::   :8oooooooO+  ~8o8+OOoooooooO8I~                                  
+                                      .=IoOoOoOO` ;8Oo  +oooooooo8:  IEo`                                                         88;  `Oooooooooo .EO8; `i=oOOoIII`                                    
+                                    ;              iOO= Ooooooooo8` .EOO~                                                        IOo8.  Ooooooooo+ I8O8`                                                
+                                                ;  ~Eo8~8oooooooOO` +Ooo;                                                        oooOi  Oooooooooo.+oO~             .                                   
+                                         `.:::`     +OO#EoooooooO: iOooo8:                                                       8oooO. I8oooooooEoOO=     ..~~.                                        
+                                       `=8EE8888Eo+: Oo8#oooooooO  OooooO+                                                      ioooooO. oooooooOE8Oo:.=O88888EEi;.                                     
+                                    ~;+8OOooooooooO8=~OoEOoooooOI =OoooooO                                                      8oooooOi ;OoooooOEO8O+8OoooooooooO8o;                                   
+                                    +8OoooooooooooooooEOoOooooOO .8oooooo8.   :i:                                         Ii   :8ooooooO` +OooooOOOE8OoooooooooooooO8`                                  
+                                    ~8ooooooooooooooooO8oOoooo8= ;OooooooO.  `888                                        :8O   :OooooooOI  +ooooooOOooooooooooooooooO`                                  
+                                     oOooooooooooooooooooooooOI  OoooooooO.  oOo8.                                    ` `OoOI  :Oooooooo+  ;8ooooooooooooooooooooooO+                                   
+                                     .OOoooooooooooooooooooo8:  :8oooooooo.  8ooo8:                                    `oOooo  :Oooooooo8~  I8ooooooooooooooooooooOo.                                   
+                                       oOooooooooooooooooooo8~  =8oooooooo. ~OoooO=                              `     =OoooO. ~Oooooooo8I  I8OooooooooooooooooooO+                                     
+                                       .OOoooooooooooooooOE8O8= .8oooooooO. :Ooooo8=   `==:                    .i8:   ~8ooooOO``Oooooooo8~ ;8OOEOoooooooooooooooO8`                                     
+                                         o8ooooooooooooO8+.I8oE. Ooooooooo`.=ooo+oOE~  ~OOEI                  ;8OOi   :OoooooE~ Ooooooooo `OOOo`=8OooooooooooooOi.                                      
+                                          IEOooooooooO8o`   E8OO~iOooooooO`~8oooooo8.  ~OooO`                :8ooo=  :Ooooooo8``8oooooooi`oOO=    =8OooooooooOE8                                        
+                                           ~+O88O888E#=     ;O8oO;OooooooO ~8ooooooO:  ~ooooOI              ;OooooI  :Ooooooo8. 8oooooo8:ooOo`     ~=o8OOOO88=.                                         
+                                              .::::::`        ;Oo8EoooooO+ ~Ooooooooo  ;ooooo8I            =Oooooo=  ioooooooOI ;OoooooE8oo~           `::`                                             
+                                                       :IIIiI;..8oOOoooo8; =Oooooooo8` =oooooo8~          IEooooooo  OoooooooOI  8ooooO8o8;.;;;;~`                                                      
+                                                     ;8EE8OOOO8oE8oooooOE` =OoooooooO. iooooooO8`         Ooooooooo ~8oooooooOi  EOoooOo8E8OOOOO88O;                                                    
+                                                   =o8OOoooooooooOOoooo8;  IOoooooooO; =oooooooOo      ~ ;Oooooooo= ~Oooooooo8i  I8ooooOOooooooooooO+o;   .                                             
+                                                 .o8OooooooooooooooooooE;  `8oooooooOI ;ooooooooE`       OooooooooI ~Oooooooo8`  `EoooooooooooooooooooO+~                                               
+                                                =8OooooooooooooooooooOOO8o: =OooooooOI ~ooooooooOI      ;OooooooooI ~oooooooOi ~=OoOOooooooooooooooooooO8I                                              
+                                               I8ooooooooooooooooooooE#8Oo8I:8ooooooOI ~OooooooooE      oooooooooO~ ~Ooooooo8.i8OoO:ioooooooooooooooooooo8I                                             
+                                               =OoooooooooooooooooooE:`:o8oOE#Eooooo8; :8oooooooo8     `8oooooooo8. ~Oooooo8#8OoO+: `OoooooooooooooooooooOI                                             
+                                               `o8ooooooooooooooooo8;   `:oOOO88oooo8: `OooooooooO     ;OoooooooO+  ~8oooo88OO8o;     Oooooooooooooooooo8I                                              
+                                                 =EOoooooooooooooOE`       +E8oOOoooO   .8ooooooooI    iOooooooo8;   +oooOOO8Ei      `:oOoooooooooooooO8I                                               
+                                                  .i8Ooooooooooo8o.     :;ioEE8Ooooo8I;: :Oooooooo=    OOoooooo8~  :IOooooo8EEoi;;`  ~` IOoooooooooooO=.                                                
+                                                   `:i88OoooOO8Eo   .+o8OOooooooooooOO88i;;EOooooo:    OoooooOEO.I88OoooooooooooOO8=` .  .i8OOoooO8oI.                                                  
+                                                      `i8+88i=~`    O8OoooooooooooOEE8OOOO888Oooooo:..:8ooooO888OOOOOOOooooooooooooOOI.    ~==i+i=;                                                     
+                                                        :         =iOooooooooooooo+~~==IIOOOooooooO88888ooooooOOOiII: ~8oooooooooooooO=;   `         `                                                  
+                                                                 =8ooooooooooooooo=      I#E8OooooOOOOOOooooO8E=.      oOoooooooooooooo8=                                                               
+                                                               ~88ooooooooooooooo8;    `i88OoooooO~~~..=8oooooOO+;`    .8oooooooooooooooO+                                                              
+                                                               8OoooooooooooooooO=    IoOoooooooo8      oooooooooO8=`   =Oooooooooooooooo8;                                                             
+                                                              ;8oooooooooooooooO+    o8ooooooooooi      ooooooooooo8o    +Oooooooooooooooo8:                                                            
+                                                              OoooooooooooooooOi  ` iOooooooooooO=      iOooooooooooO=:  .oOoooooooooooooooI                                                            
+                                                              8OoooooooooooooOo    iOooooooooooo8:      `O+ooooooooooOo    +8oooooooooooooOo                                                            
+                                                               iE8OooooooooO8o.   IOooooooooooooo        oooooooooooooOo`   ~OOooooooooO88;`                                                            
+                                                                ;==OOOOO88OI~   `+oooooooooooooOI        ;Ooooooooooooo8O    .+OO8888Oi==`                                                              
+                                                              `      `~...      `8ooooooooooooOO`         +ooooooooooooo8I       ~~~.                                                                   
+                                                                  ~ ~:.         IOoooooooooooo8.          ~oooooooooooooOO            .                                                                 
+                                                                               .8oooooooooooo8I            `ooooooooooooo8I                                                                             
+                                                                               ooooooooooooo8I              ~OOo++ooooooooo                                                                             
+                                                                               EoooooooooO8=~                 i8OoooooooooO                                                                             
+                                                                               88OOOOOO8Ei`                     :o8OOOOOO8O                                                                             

@@ -1,0 +1,70 @@
+School 0
+- Number of students               : 24
+- Number of friendship connections : 23
+- Average friends per student      : 0.958
+- Max. friends per student         : 6
+- Max. depth-2 friendship group    : 11
+- Number of separate groups        : 3
+School 1
+- Number of students               : 34
+- Number of friendship connections : 43
+- Average friends per student      : 1.26
+- Max. friends per student         : 5
+- Max. depth-2 friendship group    : 17
+- Number of separate groups        : 1
+School 2
+- Number of students               : 23
+- Number of friendship connections : 53
+- Average friends per student      : 2.3
+- Max. friends per student         : 8
+- Max. depth-2 friendship group    : 22
+- Number of separate groups        : 1
+School 3
+- Number of students               : 30
+- Number of friendship connections : 49
+- Average friends per student      : 1.63
+- Max. friends per student         : 7
+- Max. depth-2 friendship group    : 19
+- Number of separate groups        : 1
+School 4
+- Number of students               : 33
+- Number of friendship connections : 53
+- Average friends per student      : 1.61
+- Max. friends per student         : 8
+- Max. depth-2 friendship group    : 22
+- Number of separate groups        : 1
+School 5
+- Number of students               : 22
+- Number of friendship connections : 52
+- Average friends per student      : 2.36
+- Max. friends per student         : 8
+- Max. depth-2 friendship group    : 20
+- Number of separate groups        : 1
+School 6
+- Number of students               : 29
+- Number of friendship connections : 90
+- Average friends per student      : 3.1
+- Max. friends per student         : 12
+- Max. depth-2 friendship group    : 29
+- Number of separate groups        : 1
+School 7
+- Number of students               : 23
+- Number of friendship connections : 62
+- Average friends per student      : 2.7
+- Max. friends per student         : 9
+- Max. depth-2 friendship group    : 22
+- Number of separate groups        : 1
+School 8
+- Number of students               : 22
+- Number of friendship connections : 94
+- Average friends per student      : 4.27
+- Max. friends per student         : 13
+- Max. depth-2 friendship group    : 22
+- Number of separate groups        : 1
+School 9
+- Number of students               : 32
+- Number of friendship connections : 53
+- Average friends per student      : 1.66
+- Max. friends per student         : 8
+- Max. depth-2 friendship group    : 25
+- Number of separate groups        : 1

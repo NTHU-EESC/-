@@ -1,0 +1,48 @@
+11194 - Stairs Climbing   
+
+Description
+Bob is a man who wants to climb 3 step stairs.
+
+Suppose he can only climb 1 or 2 step at a time.
+
+Then , there are 3 possible ways to climb 3 step stairs
+
+          (1)  1 step + 1 step + 1 step
+          (2)  1 step + 2step
+          (3)  2 step + 1step
+
+The question is : if Bob want to climb X step stairs. 
+
+How many possible ways are there to climp X step stairs.
+ 
+
+ 
+
+ 
+
+Input
+An integer N represents the number of testcases.
+
+Then , there are following N lines.
+
+Each line contain an integer X that  represents the number of stairs in that testcase.
+
+P.S. 1<= X <=40
+
+Output
+An integer represents the number of possible way to climb N stairs.
+
+Note that you have to add '\n' at the end of output
+
+ 
+
+Sample Input
+3
+3
+5
+7 
+
+Sample Output
+3
+8
+21 

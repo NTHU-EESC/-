@@ -1,0 +1,104 @@
+Description
+Given a link list structure named Node.
+
+ 
+
+typedef struct _Node {
+
+    int data;
+
+    struct _Node *next;
+
+} Node;
+
+Use this structure to implement a increasing integer link list.
+
+ 
+
+You will be provided with main.c and function.h, and asked to implement function.c.
+
+For OJ submission:
+
+       Step 1. Submit only your function.c into the submission block. (Please choose c compiler) 
+
+       Step 2. Check the results and debug your program if necessary.
+
+main.c
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "function.h"
+
+void printList(Node *head);
+void freeList(Node*);
+
+int main() {
+	Node *head = NULL;
+	Node *temp;
+	int data;
+
+	while(1){
+		scanf("%d", &data);
+		if (data >= 0) {
+			insert_increase_list(&head, data);
+		} else break;
+	}
+
+	printList(head);
+	freeList(head);
+	return 0;
+}
+
+void freeList(Node *head)
+{
+	Node *temp;
+	for(temp=head; temp!=NULL; temp=head)
+	{
+		head = head->next;
+		free(temp);
+	}
+}
+
+void printList(Node *head)
+{
+	Node *temp;
+	for(temp = head; temp!=NULL; temp=temp->next)
+	{
+		printf("%d ", temp->data);
+	}
+	printf("\n");
+}
+
+function.h
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct _Node {
+    int data;
+    struct _Node *next;
+} Node;
+
+void insert_increase_list(Node**, int);
+
+
+Input
+A non negative integer data per rows, if input is smaller then 0 then exit the while loop and exit the program.
+
+Output
+Please follow the output of program
+
+Sample Input  Download
+
+4
+2
+1
+3
+2
+5
+-1
+Sample Output  Download
+
+1 2 2 3 4 5

@@ -1,0 +1,123 @@
+// EE231002 Lab14. Image Processing
+// 111060023, 黃柏霖
+// Date: 2022/12/26
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct sPIXEL {
+	unsigned char r, g, b;
+} PIXEL;
+
+typedef struct sIMG {
+	char header[3];
+	int W, H;
+	int level;
+	PIXEL **PX;
+} IMG;
+
+IMG *PPMin(char *inFile);
+void PPMout(IMG *p1, char *outFile);
+IMG *PPMcvt(IMG *p1, IMG *ee);
+
+int main(int argc, char **argv)
+{
+	IMG *p1, *ee, *result;
+	p1 = PPMin(argv[1]);
+	ee = PPMin(argv[2]);
+	result = PPMcvt(p1, ee);
+	PPMout(p1, argv[3]);
+	return 0;
+}
+
+IMG *PPMin(char *inFile)
+{
+	int i, j;
+	FILE *fin;
+	IMG *pic;
+	
+	pic = (IMG *) malloc(sizeof(IMG));
+	fin = fopen(inFile, "r");
+	fscanf(fin, "%s", pic->header);
+	fscanf(fin, "%d %d\n%d\n", &pic->W, &pic->H, &pic->level);
+	pic->PX = (PIXEL **)malloc(pic->W * sizeof(PIXEL *));
+	for (i = 0; i < pic->W; i++) {
+		pic->PX[i] = (PIXEL *)malloc(pic->H * sizeof(PIXEL));
+	}
+
+	for (j = 0; j < pic->H; j++) {
+		for (i = 0; i < pic->W; i++) {
+			pic->PX[i][j].r = getc(fin);
+			pic->PX[i][j].g = getc(fin);
+			pic->PX[i][j].b = getc(fin);
+		}
+	}
+	fclose(fin);
+	return pic;
+}
+
+void PPMout(IMG *pic, char *outFile)
+{
+	int i, j;
+	FILE *fout;
+	
+	fout = fopen(outFile, "w");
+	fprintf(fout, "%s \n%d %d\n%d\n", 
+			pic->header, pic->W, pic->H, pic->level);
+	for (j = 0; j < pic->H; j++) {
+		for (i = 0; i < pic->W; i++) {
+			fprintf(fout, "%c%c%c", 
+					pic->PX[i][j].r, pic->PX[i][j].g, pic->PX[i][j].b);
+		}
+	}
+	fclose(fout);
+}
+
+IMG* PPMcvt(IMG *p1, IMG *ee)
+{
+	int i, j;
+	int x_ini, y_ini;
+
+	x_ini = (p1->W - ee->W) / 2;
+	y_ini = 0;
+	for (j = 0; j < ee->H; j++) {
+		for (i = 0; i < ee->W; i++) {
+			if (ee->PX[i][j].r != 255 && ee->PX[i][j].g != 255 && 
+				ee->PX[i][j].b != 255) {
+				p1->PX[x_ini + i][j] = ee->PX[i][j];
+			}
+		}
+	}
+
+	for (j = 0; j < p1->H; j++) {
+		for (i = 0; i < p1->W; i++) {
+			if ((p1->PX[i][j].b - p1->PX[i][j].r < 5 || 
+				p1->PX[i][j].r - p1->PX[i][j].b < 5) && 
+				(p1->PX[i][j].b - p1->PX[i][j].g < 5 || 
+				p1->PX[i][j].g - p1->PX[i][j].b < 5) &&
+				(p1->PX[i][j].g - p1->PX[i][j].r < 5 || 
+				p1->PX[i][j].r - p1->PX[i][j].g < 5)
+				&& p1->PX[i][j].r > 90
+				&& p1->PX[i][j].g > 90
+				&& p1->PX[i][j].b > 90) {
+				p1->PX[i][j].r = 255;
+				p1->PX[i][j].g = 0;
+				p1->PX[i][j].b = 0;
+			}
+
+			// NTHU: (x,y) = (500~800, 580 ~ 650) people (30~1400, 450~650)
+		/*	if (i % 100 == 0 || j % 100 == 0) {
+				p1->PX[i][j].r = 255;
+				p1->PX[i][j].g = 0;
+				p1->PX[i][j].b = 0;
+			}
+			
+			else if (i % 10 == 0 || j % 10 == 0) {
+				p1->PX[i][j].r = 0;
+				p1->PX[i][j].g = 255;
+				p1->PX[i][j].b = 0;
+			}*/
+		}
+	}
+	return p1;
+}

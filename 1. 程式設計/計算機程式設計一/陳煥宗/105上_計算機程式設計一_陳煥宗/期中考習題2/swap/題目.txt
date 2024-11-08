@@ -1,0 +1,27 @@
+從檔案 swap.txt 輸入一個字串 (一串連續的字元，可以用 fscanf() 搭配 "%s" 格式讀取)
+以及一個數列 (用 fscanf() 搭配 "%d" 格式讀取，一直到讀不到數字為止)
+例如
+ABCDEFGHIJ
+5 3 8 6
+
+第一個數字 5
+代表將字串前 5 個字元和後面的字元位置調換
+所以原本的字串從
+ABCDEFGHIJ
+變成
+FGHIJABCDE
+
+接下來的數字是 3
+做同樣的事情
+所以字串接著會從
+FGHIJABCDE
+變成
+IJABCDEFGH
+
+再來是 8
+字串變成
+GHIJABCDEF
+
+再來是 6
+字串變成
+CDEFGHIJAB

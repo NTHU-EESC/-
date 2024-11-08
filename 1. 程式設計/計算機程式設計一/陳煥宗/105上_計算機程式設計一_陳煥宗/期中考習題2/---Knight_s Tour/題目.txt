@@ -1,0 +1,100 @@
+騎士的走法為西洋棋的走法，走一個直步加一個斜步 (Wikipedia)
+騎士可以由任意位置出發
+要如何走完所有位置，而且不重複
+
+例如，在 5 x 5 的棋盤上，以 (0, 0) 為起始點
+以下是一種走法
+
+ 1 10 15 20 23
+16  5 22  9 14
+11  2 19 24 21
+ 6 17  4 13  8
+ 3 12  7 18 25
+
+請將程式碼片段補齊 (??? 部分)
+印出所有可能的走法，或是無解
+可以試著改變 SIZE (棋盤大小，不要超過 5) 和 K_X、K_Y (起始位置)
+
+#include <stdio.h>
+
+#define SIZE 5
+#define K_X 0
+#define K_Y 0
+
+/*
+騎士的八種走法 
+每一行代表一種走法 x 和 y 的位移量 
+*/
+int Move[8][2] = {
+     1, -2,
+     2, -1,
+     2,  1,
+     1,  2,
+    -1,  2,
+    -2,  1,
+    -2, -1,
+    -1, -2
+};
+int NoSolution = 1;
+
+void display(int board[SIZE][SIZE])
+{
+    int i, j;
+    
+    for (i = 0; i < SIZE; ++i) {
+        for (j = 0; j < SIZE; ++j) {
+            printf("%2d ", board[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
+/*
+判斷是否超出棋盤、是否已經走過 
+path 代表是第幾種走法 
+*/
+int valid(int board[SIZE][SIZE], int x, int y, int path)
+{
+    int next_x, next_y;
+    
+    next_x = x + Move[path][0];
+    next_y = y + Move[path][1];
+    /*
+        ???
+    */
+}
+
+/* 傳入騎士現在的位置以及要尋找的是第幾步 */
+void knightTour(int board[SIZE][SIZE], int x, int y, int step)
+{
+    int next_x, next_y;
+    int i;
+
+    if (step == SIZE * SIZE + 1) {
+        NoSolution = 0;
+        display(board);
+        return;
+    }
+    for (i = 0; i < 8; ++i) {
+        if (valid(board, x, y, i) == 1) {
+            /*
+                ???
+            */
+        }
+    }
+}
+
+int main(int argc, char *argv[])
+{
+    /* board 記錄每一格在第幾步被走到 */
+    int board[SIZE][SIZE] = {0};
+    
+    board[K_X][K_Y] = 1;
+    knightTour(board, K_X, K_Y, 2);
+    if (NoSolution == 1)
+        printf("No Solution\n");
+    
+    return 0;
+}
+

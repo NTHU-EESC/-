@@ -1,0 +1,35 @@
+Given a link list structure named Node.
+
+ 
+
+typedef struct _Node {
+
+    int data;
+
+    struct _Node *next;
+
+} Node;
+
+ 
+
+Given a list, rotate the list to the left by k places, where k is non-negative and k is smaller than the count of nodes in linked list.
+
+For example: 
+Given 1->2->3->4->5->NULL and k = 3, 
+return 4->5->1->2->3->NULL.
+
+ 
+
+Input
+The input contains 2 sequence of positive integers.The first sequence is to create a linked list of integers, except the last one, which is -1, indicating the end of the sequence. The second line is an integer k. 
+
+Output
+The output contains the sequence of resulting linklist.
+
+Sample Input  Download
+
+10 20 30 40 50 60 -1
+4
+Sample Output  Download
+
+50 60 10 20 30 40

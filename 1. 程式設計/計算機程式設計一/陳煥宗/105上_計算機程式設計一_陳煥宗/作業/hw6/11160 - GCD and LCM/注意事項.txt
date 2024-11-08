@@ -1,0 +1,20 @@
+1.
+程そ计gcdノ劣锣埃猭
+ex.朝code
+   int Ea_a(int a, int b){
+	   if(a%b==0)  return b;
+	   else  return Ea_b(a%b,b);
+       }
+   int Ea_b(int a, int b){
+	   if(b%a==0)  return a;
+	   else  return Ea_a(a,b%a);
+       }
+
+2.
+程そ计lcm(x,y,z)
+lcm = x*y*z*gcd(x,y,z)/(gcd(x,y)*gcd(x,z)*gcd(y,z))
+    = lcm(x,y)*lcm(x,z)*lcm(y,z)*gcd(x,y,z)/(x*y*z)
+    = lcm(lcm(x,y),z)
+
+3.
+lcm(x,y) = x*y/gcd(x,y);

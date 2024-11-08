@@ -1,0 +1,10 @@
+1.add的function
+if(carry){
+        num3[k] = carry;
+        k++;
+}
+num3[k] = END_INT;
+
+2.煥宗的想法：
+先考個別加，最後再考慮進位問題。
+記得num3[k](最後一位的下一位)要設為END_INT(因為show_int是看這個來決定是否結束)。

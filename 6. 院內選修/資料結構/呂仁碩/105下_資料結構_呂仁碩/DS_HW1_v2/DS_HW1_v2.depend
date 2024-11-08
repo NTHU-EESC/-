@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1490529639 source:c:\users\user\desktop\ds_hw1_v2\main.cpp
+	<iostream>
+	<stdio.h>
+	<fstream>
+

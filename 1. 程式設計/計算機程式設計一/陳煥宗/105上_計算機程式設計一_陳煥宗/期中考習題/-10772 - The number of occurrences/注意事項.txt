@@ -1,0 +1,21 @@
+1.
+	scanf("%d",&n);
+	getchar();
+  *此的順序*
+2.
+	b[10][10]
+	numB[i]
+	b[i][numB[i]]
+  *可用此去存每一個測資
+3.
+	if(a[k]!=b[i][j+k]{
+	  isSame = 0;
+	  break;     //記得要用break
+	}
+	.	
+	.
+	.
+	if(isSame == 1){
+	  count++;
+	}
+  *可運用isSame去判定是否有一串字元一樣
